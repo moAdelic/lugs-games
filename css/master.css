@@ -1,0 +1,655 @@
+*{
+    --main-color:#0071f8;
+    --secend-color:#ee626b;
+    --third-color:#1e1e1e;
+    --four-color:#ddd;
+    --five-color:#fff;
+    --six-color:#f1f0fe;
+    --seven-color:#eee;
+    --eight-color:#7a7a7a;
+    --night-color:#008af8;
+    --ten-color:#eeeeee;
+    --eleven-color:#f7f7f7;
+    --tewelve-color:#c8c8c8;
+    --thirteen-color:#e7e7e7;
+    --fourteen-color:#aaa;
+    --fiveteen-color:#d7d7d7;
+    --sixteen-color:#aaaaaa;
+    --seventeen-color:#4a4a4a;
+    --eight-color:#e7e7e7;
+}
+p{
+    color: #1e1e1e;
+}
+
+
+
+
+
+/* header */
+.navbar-brand{
+    background-color: var(--main-color);
+}
+
+.navbar{
+    background-image: url("../images/page-heading-bg.jpg");
+}
+
+.head-sign-up{
+    color: var(--five-color);
+    text-decoration: none;
+    background-color: var(--secend-color);
+    border-radius: 20px;
+    margin-left: 20px;
+    
+}
+.head-sign-up:hover{
+    color: var(--eleven-color);
+}
+.nav-link:hover,.active{
+    background-color:rgba(255, 255, 255, 0.197);
+    border-radius: 20px;
+    z-index: 5;
+    overflow: hidden;
+}
+@media (max-width:992px) 
+{
+    .nav-link:hover,.active{
+        background-color:transparent;
+    }
+    .navbar-nav{
+        text-align: center;
+    }
+    .head-sign-up{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: transparent;
+    }
+}
+/* start landing */
+.landing{
+    background-image: url("../images/banner-bg.jpg");
+    height: 1114,4px;
+    border-radius:  0 0 150px 150px;
+}
+.landing .text h3{
+    color: var(--eleven-color);
+    text-transform: uppercase;
+}
+.landing .text h1{
+    color: var(--eleven-color);
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 5px;
+}
+.landing .text h1::after{
+    position: absolute;
+    background-image: url(../images/caption-dec.png);
+    width: 202px;
+    height: 12px;
+    content: '';
+    left: 120px;
+    bottom: 0;
+}
+.landing .text p{
+    color: var(--fiveteen-color);
+    line-height: 1.8;
+}
+.landing .landing-image .price{
+    top: 5px;
+    right: 5px;
+    background-color: var(--secend-color);
+    color: var(--seven-color);
+    z-index: 99;
+    padding: 10px;
+    border-radius: 20px;
+
+}
+.landing .landing-image .discount{
+    bottom: 5px;
+    left: 5px;
+    background-color: var(--night-color);
+    color: var(--seven-color);
+    z-index: 99;
+    padding: 10px;
+    border-radius: 20px;
+}
+.landing  input:focus{
+    outline: none;
+}
+form{
+    position: relative;
+    max-width: 100%;
+    width: 450px;
+
+}
+.landing form input[type="text" ]{
+    width: 100%;
+    height: 50px;
+    padding: 9px;
+    border-radius: 30px;
+    background-color: var(--five-color);
+    border: none;
+
+}
+.landing form button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: var(--secend-color);
+    color: var(--eleven-color);
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    transition: 0.5s;
+}
+.landing form button:hover{
+    background-color: var(--main-color);
+}
+@media (max-width:992px) {
+    .landing .text{
+        text-align: center;
+        margin: 20px;
+    }
+    .landing .landing-image img{
+        width: 100%;
+    }
+}
+@media (max-width:700px){
+    .landing .text h3{
+        font-size: 15px;
+    }
+    .landing .text h1{
+        font-size: 30px;
+    }
+    .landing .text h1::after{
+        position: absolute;
+        background-image: url(../images/caption-dec.png);
+        width: 200px;
+        height: 12px;
+        content: '';
+        left: 30px;
+        bottom: -2px;
+    }
+}
+.features .box{
+    background-color: var(--five-color);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;   
+    border-radius: 30px;
+    margin-bottom: 62px;
+    margin-top: -42px;
+}
+.features .box img{
+    background-color: var(--night-color);
+    transition: 0.3s;
+}
+.features .box img:hover{
+    background-color: var(--secend-color);
+}
+
+.games .container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.games .box-games{
+    background-color: var(--eight-color);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.games .box-games .discount{
+    top: 20px;
+    right: 20px;
+    background-color: var(--secend-color);
+    z-index: 99;
+    color: var(--five-color);
+    padding: 4px;
+}
+
+.games .box-games .price{
+    top: 50px;
+    right: 20px;
+    background-color: var(--main-color);
+    z-index: 99;
+    padding: 4px;
+    color: var(--five-color);
+}
+.games .box-games img{
+    width: 100%;
+}
+.games .box-games .action{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.games .box-games .action a{
+    font-size: 40px;
+    transition: 0.4s;
+}
+.games .box-games .action a:hover{
+    color: var(--secend-color);
+}
+.games .heading a{
+    background-color: var(--secend-color);
+    color: var(--eleven-color);
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.games .heading a:hover{
+    background-color: var(--main-color);
+}
+
+
+.played-games {
+    background-color: var(--eight-color);
+    border-radius:  150px 150px 150px 150px;
+}
+.played-games .heading a{
+    background-color: var(--secend-color);
+    color: var(--eleven-color);
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.played-games .heading a:hover{
+    background-color: var(--main-color);
+}
+.played-games .carousel-game .explore {
+    background-color: var(--secend-color);
+    color: var(--eleven-color);
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    margin: auto ;
+    width: fit-content;
+    transition: 0.4s;
+}
+.played-games .carousel-game .explore :hover{
+    background-color: var(--main-color);
+}
+.played-games .carousel-game h4:hover{
+    color: var(--main-color);
+}
+.categories .Categories-image h2{
+    background-color: var(--night-color);
+    padding: 30px 20px;
+    border-radius: 14px 14px  0 0 ;
+    margin-bottom: -20px;
+}
+.categories .Categories-image img{
+    border-radius: 20px;
+
+}
+.categories .Categories-image{
+    flex-wrap: wrap;
+}
+
+.shop .container img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.shop .container .box-one,.box-two{
+    background-color: var(--ten-color);
+}
+.shop .container .box-one{
+    left: 0;
+    top: 20%;
+    max-width: 600px;
+    border-radius: 30px;
+    position: absolute;
+}
+.shop .container .box-one span{
+    color: var(--night-color);
+}
+.shop .container .box-one a{
+    background-color: var(--secend-color);
+    color: var(--eleven-color);
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.4s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width:fit-content;
+    text-transform: uppercase;
+}
+.shop .container .box-one a:hover{
+    background-color: var(--main-color);
+}
+.shop .container .box-two{
+    right: 0;
+    top: 30%;
+    max-width: 500px;
+    border-radius: 30px;
+    position: absolute;
+}
+.shop .container .box-two span{
+    color: var(--night-color);
+}
+
+.shop  input:focus{
+    outline: none;
+}
+form{
+    position: relative;
+    max-width: 100%;
+    width: 450px;
+
+}
+.shop form input[type="text" ]{
+    width: 100%;
+    height: 50px;
+    padding: 9px;
+    border-radius: 30px;
+    background-color: var(--five-color);
+    border: none;
+
+}
+.shop form button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: var(--secend-color);
+    color: var(--eleven-color);
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    transition: 0.5s;
+    margin-right: -26px;
+}
+.shop form button:hover{
+    background-color: var(--main-color);
+}
+@media (max-width:992px) 
+{
+    .shop .container img{
+        display: none;
+    }
+    .shop .container .box-one{
+        width: 100%;
+        top: 0;
+        left: 0;position: relative;
+        margin-bottom: 30px;
+    }
+    .shop .container .box-two{
+        right: 0;
+        top: 100%;
+        width: 100%;position: relative;
+    }
+    .shop form input[type="text" ]{
+        width: 40%;
+    }
+    .shop form button{
+        margin-right: 5px;
+    }
+
+}
+footer{
+    background-image:url("../images/footer-bg.jpg") ;
+    border-radius: 50px 50px 0 0 ;
+    margin-bottom: -20px;
+}
+footer p{
+    color: var(--eleven-color);
+}
+footer .social svg{
+    color: white;
+    font-size: 40px;padding-bottom: 10px;
+    transition: 0.4s;
+    padding: 5px;
+
+}
+footer .social svg:hover{
+    color: var(--secend-color);
+}
+.shop-heading 
+{
+    height: 50vh;
+    background-image: url("../images/banner-bg.jpg");
+    border-radius: 0 0 150px 150px;
+}
+.shop-heading h1{
+    font-weight: bold;
+    padding-bottom: 20px;
+    font-size: 50px;
+}
+.shop-games .shop-games-links .links{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.shop-games .links .active a {
+    background-color: var(--secend-color);
+    color: var(--eleven-color) !important;
+}
+.shop-games li{
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.shop-games li a{
+    text-decoration: none;
+    background-color: var(--eight-color);
+    margin-right: 10px;
+    padding: 10px;
+    border-radius: 20px;
+}
+.games .container > div:not(:first-child){
+    display: none;
+}
+
+.product-heading {
+    height: 50vh;
+    background-image: url("../images/banner-bg.jpg");
+    border-radius: 0 0 150px 150px;
+}
+
+.call-of-duety .container img{
+    margin-bottom: 60px;
+}
+@media (max-width:700px) {
+    .call-of-duety .container img{
+        width: 300px;
+        margin-left: auto;
+    }
+    .call-of-duety .container .price-game h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    .call-of-duety .container .price-game p{
+        text-align: center;
+    }
+    
+}
+.call-of-duety .container .price-game del{
+    color: var(--sixteen-color);
+    font-size: 20px;
+    margin-right: 5px;
+}       
+.call-of-duety .container .price-game span{
+    color: #0071f8;
+    font-size: 40px;
+    
+}
+.call-of-duety .container .price-game p{
+    margin-top: 50px;
+    color: var(--four-color);
+}
+.call-of-duety .container .information-game input{
+    width: 60px;
+    border-radius: 30px;
+    padding: 5px;
+    background-color: var(--eleven-color);
+    border: none;
+    margin-right: 20px;
+}
+.call-of-duety .container .information-game input:focus{
+    outline-color: var(--main-color);
+    outline-width: 3px;
+
+}
+.call-of-duety .container .information-game a{
+    color: var(--seven-color);
+    background-color: var(--night-color);
+    padding: 11px;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+.call-of-duety .container .information-game a:hover{
+    background-color: var(--secend-color);
+    color: var(--seven-color);
+}
+.call-of-duety .container .information-game .inside-info span{
+    color: var(--night-color);
+}
+.call-of-duety .container .information-game .inside-info .sp1{
+    margin-left: 50px;
+}
+.call-of-duety .container .information-game .inside-info .sp2{
+    margin-left: 66px;
+}
+.call-of-duety .container .information-game .inside-info .sp3{
+    margin-left: 31px;
+}
+.description .container .text{
+    padding: 30px;
+    background-color: var(--four-color);
+    border-radius: 25px;
+}
+.description .container .text p{
+    margin-top: 50px;
+    line-height: 2;
+}
+.description .container .text span:first-child{
+    color: var(--night-color);
+    font-size: 30px;
+    padding-right: 20px;
+
+}
+.description .container .text span:nth-child(2){
+    border-left: 1px solid var(--main-color);
+    font-size: 30px;
+    padding-left: 30px;
+}
+@media (max-width:700px) {
+    .description .container .text span:first-child{
+        font-size: 20px;
+    }
+    .description .container .text span:nth-child(2){
+        font-size: 20px;
+    }
+}
+.related-games .text a{
+    background-color: var(--secend-color);
+    color: var(--eleven-color);
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    transition: 0.4s;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+.related-games .text a:hover{
+    background-color: var(--night-color);
+}
+.related-games .container .item .explore{
+    text-decoration: none;
+    color: var(--five-color);
+    background-color: var(--night-color);
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.4s;
+    margin: auto ;
+    width: fit-content;
+}
+.related-games .container .item .explore:hover{
+    background-color: var(--secend-color);
+    
+}
+.contact-us .container .left{
+    background-color: var(--four-color);
+    padding: 30px;
+    border-radius: 30px;
+}
+.contact-us .container .left .one{
+    color: var(--third-color);
+}
+.contact-us .container .left .all{
+    color: var(--secend-color);
+}
+.contact-us .container .right form{
+    width: 100%;
+}
+.contact-us .container .right form input{
+    width: 40%;
+    border: none;
+    border-bottom: 1px solid var(--night-color);
+    padding: 15px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+
+}
+.contact-us .container .right form input:focus{
+    outline: none;
+}
+.contact-us .container .right form textarea{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid var(--night-color);
+    padding: 15px;
+    margin-bottom: 30px;
+    width: 80%;
+    margin-left: 20px;
+}
+.contact-us .container .right form a{
+    text-decoration: none;
+    color: var(--five-color);
+    background-color: var(--night-color);
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.4s;
+    margin: auto ;
+    width: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.contact-us .container .right form a:hover{
+    background-color: var(--secend-color);
+}
+
+/* disapear placeholder */
+:focus::-webkit-input-placeholder{
+    opacity: 0;
+    -webkit-transition: opacity 0.4s ease-in-out ; 
+    transition: opacity 0.4s ease-in-out;
+}
+.form input:focus::-moz-placeholder{
+    opacity: 0;
+    -moz-transition: opacity 0.4s ease-in-out ; 
+    transition: opacity 0.4s ease-in-out;
+}
+.form input:focus:-moz-placeholder{
+    opacity: 0;
+    -moz-transition: opacity 0.4s ease-in-out ; 
+    transition: opacity 0.4s ease-in-out;
+}
+.form input:focus:-ms-input-placeholder{
+    opacity: 0;
+    -ms-transition: opacity 0.4s ease-in-out  ;
+    transition: opacity 0.4s ease-in-out;
+}
+/* end disapear placeholder */
